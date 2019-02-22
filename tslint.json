@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "plugins": [
+            { "name": "typescript-tslint-plugin" }
+        ]
+    },
+    "extends": ["tslint:latest", "tslint-react"],
+    "rules": {
+        // override tslint-react rules here
+        "jsx-wrap-multiline": false,
+        "semicolon": [true, "never"],
+        "no-console": [false, "log", "error"],
+        "indent": [true, "spaces", 4],
+        "interface-name": [true, "never-prefix"],
+        "quotemark": [
+            true,
+            "single",
+            "jsx-double",
+            "avoid-template",
+            "avoid-escape"
+        ]
+    }
+}
